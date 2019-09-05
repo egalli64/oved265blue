@@ -1,3 +1,9 @@
+--- sqlplus / as sydba
+--@/percorso/rootSetup.sql
+--conn blue/password
+--@/percorso/setup.sql-
+
+
 drop table users;
 drop table administrator;
 create table users  (

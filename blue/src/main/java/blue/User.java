@@ -10,9 +10,10 @@ public class User {
 	private String creditcard;
 	private String password;
 	private String patente;
-	
+	// public boolean valid;
+
 	public User() {
-		
+
 	}
 
 	public String getUser_id() {
@@ -79,4 +80,11 @@ public class User {
 		this.patente = patente;
 	}
 
+//	public boolean isValid() {
+//		return valid;
+//	}
+//
+//	public void setValid(boolean newValid) {
+//		valid = newValid;
+//	}
 }
