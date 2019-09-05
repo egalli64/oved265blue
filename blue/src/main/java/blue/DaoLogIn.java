@@ -26,7 +26,7 @@ public class DaoLogIn {
 
 			try {
 				PreparedStatement query = null;
-				String s = "select country_id, country_name from regions natural join countries where region_id = ? "; 		// ? --> parte variabile della stringa
+				String s = "select * from users where username=? and password=? "; 		// ? --> parte variabile della stringa
 				query = conn.prepareStatement(s);  
 				query.setLong(1, Long.parseLong(regionId));		 // 1 --> riferito al PRIMO punto di domanda, a cui assegno la variabile stringa regionId
 				ResultSet rs = query.executeQuery();		 	// esegue la query
