@@ -37,7 +37,6 @@ public class LogIn extends HttpServlet {
 			HttpSession session = request.getSession(true);
 
 			session.setAttribute("user", user);
-			request.setAttribute("user", user);
 			request.getRequestDispatcher("userLogged.jsp").forward(request, response);
 
 		} else {

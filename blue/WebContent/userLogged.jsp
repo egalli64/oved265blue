@@ -1,14 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=windows-1256"
-	pageEncoding="windows-1256" %>
+<%@ page language="java" contentType="text/html";
+	pageEncoding="UTF-8" %>
 <%@ page import="blue.User"%>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
-   "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 
 <html>
 <head>
-<meta http-equiv="Content-Type"
-	content="text/html; charset=windows-1256">
+<meta http-equiv="Content-Type">
 <title>User Logged Successfully</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,23 +22,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
 <!-- Navigation Bar -->
 <div class="w3-bar w3-black w3-large">
   <a href="/blue/index.html" class="w3-bar-item w3-button w3-blue w3-mobile"><i class="fa fa-car w3-margin-right"></i>eCar Blue</a>
-  
    <a href="/blue/cars.html" class="w3-bar-item w3-button w3-grey w3-mobile">Cars</a>
     <a href="#" class="w3-bar-item w3-button w3-grey w3-mobile">Administration</a>
   <!-- <a href="#contact" class="w3-bar-item w3-button w3-mobile">Contact</a> -->
   
-  <a href="/blue/signUp.html" class="w3-bar-item w3-button w3-right w3-blue w3-mobile" method="post">Sign Up</a>
 </div>
-
-	<center>
-		<%
-			  User currentUser = (User)(request.getAttribute("user"));
-
-		%>
-
-		Welcome
-		<%--  <%=currentUser.getName() + " " + currentUser.getSurname()%>--%>
-	</center>
+<div><h1>Welcome ${user.username}</h1>
+</div>
 
 </body>
 
