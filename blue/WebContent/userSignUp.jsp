@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html";
+<%@ page language="java" contentType="text/html"
 	pageEncoding="UTF-8" %>
 <%@ page import="blue.User"%>
 

@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html";
+<%@ page language="java" contentType="text/html"
 	pageEncoding="UTF-8" %>
 <%@ page import="blue.User"%>
 
@@ -27,7 +27,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
   <!-- <a href="#contact" class="w3-bar-item w3-button w3-mobile">Contact</a> -->
   
 </div>
-<div><h1>Welcome ${user.username}</h1>
+
+<div>
+<h1>Welcome ${user.username}</h1>
 </div>
 
 </body>
