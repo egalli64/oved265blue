@@ -8,7 +8,6 @@
         <welcome-file>index.html</welcome-file> <!-- dice quale pagina aprire per prima -->
     </welcome-file-list>
 
-
     <!-- slide 20 -->
     <resource-ref>
         <res-ref-name>jdbc/blue</res-ref-name>

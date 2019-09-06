@@ -1,6 +1,5 @@
-
-<%@ page language="java" contentType="text/html;
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html"
+	pageEncoding="UTF-8" %>
 <%@ page import="blue.User"%>
 <!DOCTYPE html>
 

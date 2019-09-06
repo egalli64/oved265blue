@@ -10,10 +10,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.sql.DataSource;
-import javax.servlet.http.Cookie;
 
-@WebServlet("/LogIn")
-public class LogIn extends HttpServlet {
+@WebServlet("/AdminLogIn")
+public class AdminLogIn extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
 
@@ -24,23 +23,24 @@ public class LogIn extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		DaoLogIn dao = new DaoLogIn(ds);
+		DaoAdmin dao_admin = new DaoAdmin(ds);
 
 		String username = request.getParameter("user");
 		String password = request.getParameter("password");
-		if (dao.checkUserbyUsernameAndPassword(username, password)) {
-			User user = new User();
+		if (dao_admin.checkAdminbyUsernameAndPassword(username, password)) {
+			AdminBean administrator = new AdminBean();
 
-			user.setUsername(username);
-			user.setPassword(password);
+			administrator.setUsername(username);
+			administrator.setPassword(password);
 
 			HttpSession session = request.getSession(true);
 
-			session.setAttribute("user", user);
-			request.getRequestDispatcher("/userLogged.jsp").forward(request, response);
+			session.setAttribute("user", administrator);
+			
+			request.getRequestDispatcher("/AdminLogged.jsp").forward(request, response);
 
 		} else {
-			request.getRequestDispatcher("/invalidLogin.jsp").forward(request, response);
+			request.getRequestDispatcher("/invalidAdminLogIn.jsp").forward(request, response);
 		}
 
 	}

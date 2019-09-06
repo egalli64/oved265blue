@@ -10,7 +10,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.sql.DataSource;
-import javax.servlet.http.Cookie;
 
 @WebServlet("/SignUp")
 public class SignUp extends HttpServlet {
@@ -53,10 +52,10 @@ public class SignUp extends HttpServlet {
 				HttpSession session = request.getSession(true);
 
 				session.setAttribute("user", user);
-				request.getRequestDispatcher("userSignUp.jsp").forward(request, response);
+				request.getRequestDispatcher("/userSignUp.jsp").forward(request, response);
 
 			} else {
-				response.sendRedirect("invalidSignUp.jsp");
+				request.getRequestDispatcher("/invalidSignUp.jsp").forward(request, response);
 			}
 
 		}
