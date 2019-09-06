@@ -52,10 +52,10 @@ public class SignUp extends HttpServlet {
 				HttpSession session = request.getSession(true);
 
 				session.setAttribute("user", user);
-				request.getRequestDispatcher("userSignUp.jsp").forward(request, response);
+				request.getRequestDispatcher("/userSignUp.jsp").forward(request, response);
 
 			} else {
-				request.getRequestDispatcher("invalidSignUp.jsp").forward(request, response);
+				request.getRequestDispatcher("/invalidSignUp.jsp").forward(request, response);
 			}
 
 		}

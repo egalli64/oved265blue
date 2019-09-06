@@ -2,7 +2,6 @@ package blue;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import javax.sql.DataSource;
 
@@ -40,13 +39,13 @@ public class DaoSignUp {
 
 			int i = query.executeUpdate();
 			
-			if (i > 0)
+			if (i == 1)
 				return true;
 			else
 				return false;
 			
 		} catch (SQLException se) {
-			return false;
+			throw new IllegalStateException("Database issue " + se.getMessage());
 		}
 	}
 }

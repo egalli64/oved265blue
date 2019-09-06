@@ -37,10 +37,10 @@ public class LogIn extends HttpServlet {
 			HttpSession session = request.getSession(true);
 
 			session.setAttribute("user", user);
-			request.getRequestDispatcher("userLogged.jsp").forward(request, response);
+			request.getRequestDispatcher("/userLogged.jsp").forward(request, response);
 
 		} else {
-			request.getRequestDispatcher("invalidLogin.jsp").forward(request, response);
+			request.getRequestDispatcher("/invalidLogin.jsp").forward(request, response);
 		}
 
 	}

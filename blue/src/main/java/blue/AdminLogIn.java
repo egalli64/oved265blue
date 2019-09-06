@@ -36,10 +36,11 @@ public class AdminLogIn extends HttpServlet {
 			HttpSession session = request.getSession(true);
 
 			session.setAttribute("user", administrator);
-			request.getRequestDispatcher("AdminLogged.jsp").forward(request, response);
+			
+			request.getRequestDispatcher("/AdminLogged.jsp").forward(request, response);
 
 		} else {
-			request.getRequestDispatcher("invalidAdminLogIn.jsp").forward(request, response);
+			request.getRequestDispatcher("/invalidAdminLogIn.jsp").forward(request, response);
 		}
 
 	}
