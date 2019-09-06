@@ -10,7 +10,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.sql.DataSource;
-import javax.servlet.http.Cookie;
 
 @WebServlet("/AdminLogIn")
 public class AdminLogIn extends HttpServlet {
@@ -40,7 +39,7 @@ public class AdminLogIn extends HttpServlet {
 			request.getRequestDispatcher("AdminLogged.jsp").forward(request, response);
 
 		} else {
-			response.sendRedirect("invalidAdminLogIn.jsp");
+			request.getRequestDispatcher("invalidAdminLogIn.jsp").forward(request, response);
 		}
 
 	}
