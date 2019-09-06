@@ -25,7 +25,7 @@ public class DaoSignUp {
 			PreparedStatement query = null;
 
 			String searchQuery = "insert into users (user_id, name, last_name, username, password, email, card_number, card_date, card_cvv, licence) "
-					+ "values (my_seq.nextval, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; 
+					+ "values (my_seq.nextval, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
 			query = conn.prepareStatement(searchQuery);
 			query.setString(1, name);
@@ -43,10 +43,8 @@ public class DaoSignUp {
 				return true;
 			else
 				return false;
-		} catch (
-
-		SQLException se) {
-			throw new IllegalStateException("Database issue " + se.getMessage());
+		} catch (SQLException se) {
+			return false;
 		}
 	}
 }

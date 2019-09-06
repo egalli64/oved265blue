@@ -36,7 +36,6 @@ public class DaoLogIn {
 			if (rs.getInt(1) == 1)
 				return true;
 
-			// if user exists set the isValid variable to true
 			else
 				return false;
 
