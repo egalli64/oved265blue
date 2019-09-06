@@ -28,8 +28,8 @@ public class DaoAdmin {
 				query = conn.prepareStatement(searchQuery);
 				query.setString(1, username);
 				query.setString(2, password);// 1 --> riferito al PRIMO punto di domanda, a cui assegno la variabile stringa
-												//
-				ResultSet rs = query.executeQuery(); // esegue la query
+												
+				ResultSet rs = query.executeQuery(); 
 
 				rs.next();
 

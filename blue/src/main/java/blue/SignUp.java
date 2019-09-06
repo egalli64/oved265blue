@@ -56,7 +56,7 @@ public class SignUp extends HttpServlet {
 				request.getRequestDispatcher("userSignUp.jsp").forward(request, response);
 
 			} else {
-				response.sendRedirect("invalidSignUp.jsp");
+				request.getRequestDispatcher("invalidSignUp.jsp").forward(request, response);
 			}
 
 		}

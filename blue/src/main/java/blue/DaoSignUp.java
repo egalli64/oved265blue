@@ -40,7 +40,7 @@ public class DaoSignUp {
 
 			int i = query.executeUpdate();
 			
-			if (i == 1)
+			if (i > 0)
 				return true;
 			else
 				return false;
