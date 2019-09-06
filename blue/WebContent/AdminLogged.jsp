@@ -25,7 +25,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
    <a href="/blue/cars.html" class="w3-bar-item w3-button w3-grey w3-mobile">Cars</a>
     <a href="#" class="w3-bar-item w3-button w3-grey w3-mobile">Administration</a>
   <!-- <a href="#contact" class="w3-bar-item w3-button w3-mobile">Contact</a> -->
-  
+   <a href="/blue/admin.html" class="w3-bar-item w3-button w3-right w3-blue w3-mobile" method="post">Logout</a>
 </div>
 
 <div>
