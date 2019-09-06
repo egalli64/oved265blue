@@ -39,10 +39,12 @@ public class DaoSignUp {
 			query.setString(9, licence);
 
 			int i = query.executeUpdate();
+			
 			if (i == 1)
 				return true;
 			else
 				return false;
+			
 		} catch (SQLException se) {
 			return false;
 		}
