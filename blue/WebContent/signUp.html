@@ -56,7 +56,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
      -->     
        <div class= "w3-half w3-margin-bottom">
     <label><i class="fa fa-envelope" aria-hidden="true"></i> Email</label>
-    <input class="w3-input w3-border" type="text"  placeholder="Enter Email" name="email" required>
+    <input class="w3-input w3-border" type="email"  placeholder="Enter Email" name="email" required>
 </div>
           
      <!--  <div class="w3-half w3-margin-bottom">
@@ -76,17 +76,17 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
 
 <div class="w3-half w3-margin-bottom">
             <label><i class="fa fa-credit-card" aria-hidden="true"></i> Credit card</label>
-     <input class="w3-input w3-border" type="text" placeholder="0000-0000-0000-0000" name="card_number" required>
+     <input class="w3-input w3-border" type="number" max="99999999999999999999" placeholder="0000-0000-0000-0000" name="card_number" required>
           </div>
 
 <div class="w3-half w3-margin-bottom">
             <label><i class="fa fa-calendar-o" aria-hidden="true"></i> Expiration Date</label>
-     <input class="w3-input w3-border" type="text" placeholder="MM-YY" name="card_date" required>
+     <input class="w3-input w3-border" type="number" placeholder="MM-YY" max="9999" name="card_date" required>
           </div>
           
           <div class="w3-half w3-margin-bottom">
             <label> CV Code</label>
-            <input class="w3-input w3-border" type="text" placeholder="Number" name="card_cvv" required>
+            <input class="w3-input w3-border" type="number" max="999" placeholder="Number" name="card_cvv" required>
           </div>
 </div>
 
