@@ -8,7 +8,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type">
-<title>User Logged Successfully</title>
+<title>Personal Profile</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -21,7 +21,6 @@ text-align: center;
 color: white;
 background-color: black; 
 margin: 0px;
-
 }
 img{
 background-color: black; 
@@ -30,16 +29,12 @@ background-color: black;
 </head>
 
 <body>
-<!-- Navigation Bar -->
 <div class="w3-bar w3-black w3-large">
   <a href="/blue/index.jsp" class="w3-bar-item w3-button w3-blue w3-mobile"><i class="fa fa-car w3-margin-right"></i>eCar Blue</a>  
   <a href="/blue/cars.jsp" class="w3-bar-item w3-button w3-grey w3-mobile">Cars</a>
   <a href="/blue/admin.jsp" class="w3-bar-item w3-button w3-grey w3-mobile">Administration</a>
   <a href="/blue/Places.jsp" class="w3-bar-item w3-button w3-grey w3-mobile">Places</a>
   <a href="/blue/Howitworks.jsp" class="w3-bar-item w3-button w3-grey w3-mobile">How it works</a>
-  <a href="/blue/YourProfile.jsp" class="w3-bar-item w3-button w3-grey w3-mobile">${user.username} Profile</a>
-  
-  
   <c:if test="${user == null}">
     <a href="/blue/signUp.html" class="w3-bar-item w3-button w3-right w3-blue w3-mobile" >Sign Up</a>
         <a href="/blue/index.jsp" class="w3-bar-item w3-button w3-right w3-blue w3-mobile" method="post">Sign In</a>
@@ -52,17 +47,11 @@ background-color: black;
 
   </c:if>  
   </div>
-
-<div>
-<h1>Welcome ${user.username}</h1>
-<img class="w3-image" src="./pic/Immagine1.jpg" alt="eCar">		
-
-
+  
+ <div>
+<h1>My Profile</h1>
+<img class="w3-image" src="./pic/Cattura.PNG" alt="eCar" >		
 </div>
-<!-- <div>
- <form action="/blue/Logout" method="get">
-      <input type="submit" value="Logout">
-   </form></div>-->
 
 </body>
 
