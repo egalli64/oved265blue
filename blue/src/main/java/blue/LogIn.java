@@ -35,8 +35,9 @@ public class LogIn extends HttpServlet {
 			user.setPassword(password);
 
 			HttpSession session = request.getSession(true);
-
 			session.setAttribute("user", user);
+	        session.setMaxInactiveInterval(300); // 5 minuti
+
 			request.getRequestDispatcher("/userLogged.jsp").forward(request, response);
 
 		} else {

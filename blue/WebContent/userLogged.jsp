@@ -31,6 +31,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
 <div>
 <h1>Welcome ${user.username}</h1>
 </div>
+<div>
+   <form action="/blue/Logout" method="get">
+      <input type="submit" value="Logout">
+   </form></div>
 
 </body>
 
