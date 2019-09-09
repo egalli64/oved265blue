@@ -23,14 +23,11 @@ public class Logout extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		response.setContentType("text/html");
-		PrintWriter out = response.getWriter();
-		out.println("thank you!! Session ended!");
 		HttpSession session = request.getSession(false);
-		// session.setAttribute("user", null);
 		session.removeAttribute("user");
 
 		session.getMaxInactiveInterval();
+		request.getRequestDispatcher("/Logout.jsp").forward(request, response);
 	}
 
 	@Override
