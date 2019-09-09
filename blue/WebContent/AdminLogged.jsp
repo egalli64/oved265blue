@@ -16,6 +16,16 @@
 
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+h1 {
+text-align: center;
+color: white;
+background-color: black; 
+margin: 0px;
+
+}
+img{
+background-color: black; 
+}
 </style>
 </head>
 
