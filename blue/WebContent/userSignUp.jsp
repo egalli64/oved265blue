@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type">
-<title>User Logged Successfully</title>
+<title>User Registered Successfully</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
