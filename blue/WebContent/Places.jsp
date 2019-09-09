@@ -1,3 +1,4 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,20 +16,28 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
 </head>
 <body>
 
-
 <!-- Navigation Bar -->
-<div class="w3-bar w3-white w3-large">
-  <a href="/blue/index.html" class="w3-bar-item w3-button w3-blue w3-mobile"><i class="fa fa-car w3-margin-right"></i>eCar Blue</a>
-  <a href="/blue/cars.html" class="w3-bar-item w3-button w3-white w3-mobile">Cars</a>
-  <a href="/blue/admin.html"" class="w3-bar-item w3-button w3-white w3-mobile">Administration</a>
-  <a href="/blue/Howitworks.html" class="w3-bar-item w3-button w3-white w3-mobile">How it works</a>
+<div class="w3-bar w3-black w3-large">
+  <a href="/blue/index.jsp" class="w3-bar-item w3-button w3-blue w3-mobile"><i class="fa fa-car w3-margin-right"></i>eCar Blue</a>  
+  <a href="/blue/cars.jsp" class="w3-bar-item w3-button w3-grey w3-mobile">Cars</a>
+  <a href="/blue/admin.html" class="w3-bar-item w3-button w3-grey w3-mobile">Administration</a>
+  <a href="/blue/Places.jsp" class="w3-bar-item w3-button w3-grey w3-mobile">Places</a>
+  <a href="/blue/Howitworks.jsp" class="w3-bar-item w3-button w3-grey w3-mobile">How it works</a>
+  
+  <c:if test="${user == null}">
+    <a href="/blue/signUp.html" class="w3-bar-item w3-button w3-right w3-blue w3-mobile" >Sign Up</a>
+        <a href="/blue/index.jsp" class="w3-bar-item w3-button w3-right w3-blue w3-mobile" method="post">Sign In</a>
     
-  <!-- <a href="#contact" class="w3-bar-item w3-button w3-mobile">Contact</a> -->
   
-  <a href="/blue/signUp.html" class="w3-bar-item w3-button w3-right w3-blue w3-mobile" method="post">Sign Up</a>
-    <a href="/blue/index.html" class="w3-bar-item w3-button w3-right w3-blue w3-mobile" method="post">Sign In</a>
-  
+  </c:if>
+     
+  <c:if test="${user!=null}">
+      <a href="/blue/Logout" class="w3-bar-item w3-button w3-right w3-blue w3-mobile" >Logout ${user.username}</a>
+
+  </c:if>  
+ 
 </div>
+
 <div>
 
 <h2>Places</h2>
