@@ -54,7 +54,7 @@ background-color: black;
   </div>
 
 <div>
-<h1 >Hi ${user.username}, See you next time</h1>
+<h1 >Bye Bye ${user.username}, See you next time</h1>
 <img class="w3-image" src="./pic/Immagine1.jpg" alt="eCar">
 
 </div>
