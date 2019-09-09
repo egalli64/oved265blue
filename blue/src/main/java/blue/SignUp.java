@@ -29,11 +29,11 @@ public class SignUp extends HttpServlet {
 			String username = request.getParameter("username");
 			String password = request.getParameter("password");
 			String email = request.getParameter("email");
+			String licence = request.getParameter("licence");
 //			String birth = request.getParameter("birth");
 			String card_number = request.getParameter("card_number");
 			String card_date = request.getParameter("card_date");
 			String card_cvv = request.getParameter("card_cvv");
-			String licence = request.getParameter("licence");
 			
 			if (dao.checkSignUpForm(name, last_name, username, password, email, licence, card_number, card_date, card_cvv)) {
 				User user = new User();
@@ -43,10 +43,11 @@ public class SignUp extends HttpServlet {
 				user.setUsername(username);
 				user.setPassword(password);
 				user.setEmail(email);
+				user.setLicence(licence);
 				user.setCard_number(card_number);
 				user.setCard_date(card_date);
 				user.setCard_cvv(card_cvv);
-				user.setLicence(licence);
+			
 
 
 				HttpSession session = request.getSession(true);

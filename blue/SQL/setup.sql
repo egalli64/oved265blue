@@ -9,10 +9,10 @@ last_name varchar2(100),
 username varchar2(100) unique not null,
 password varchar2(100) not null,
 email varchar2(100) unique not null,
-card_number varchar2(100),
+licence varchar2(100) unique not null,
+card_number integer not null,
 card_date integer not null,
-card_cvv integer not null,
-licence varchar2(100) unique not null);
+card_cvv integer not null);
 
 create sequence my_seq;
 

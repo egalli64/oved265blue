@@ -17,13 +17,12 @@ public class DaoSignUp {
 		}
 	}
 
-	public boolean checkSignUpForm(String name, String last_name, String username, String password, String email,
-			String card_number, String card_date, String card_cvv, String licence) {
+	public boolean checkSignUpForm(String name, String last_name, String username, String password, String email, String licence, String card_number, String card_date, String card_cvv) {
 		try {
 
 			PreparedStatement query = null;
 
-			String searchQuery = "insert into users (user_id, name, last_name, username, password, email, card_number, card_date, card_cvv, licence) "
+			String searchQuery = "insert into users (user_id, name, last_name, username, password, email, licence, card_number, card_date, card_cvv) "
 					+ "values (my_seq.nextval, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
 			query = conn.prepareStatement(searchQuery);
@@ -32,10 +31,11 @@ public class DaoSignUp {
 			query.setString(3, username);
 			query.setString(4, password);
 			query.setString(5, email);
-			query.setString(6, card_number);
-			query.setString(7, card_date);
-			query.setString(8, card_cvv);
-			query.setString(9, licence);
+			query.setString(6, licence);
+			query.setString(7, card_number);
+			query.setString(8, card_date);
+			query.setString(9, card_cvv);
+			
 
 			int i = query.executeUpdate();
 			
