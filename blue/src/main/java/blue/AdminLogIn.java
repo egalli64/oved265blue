@@ -35,7 +35,8 @@ public class AdminLogIn extends HttpServlet {
 
 			HttpSession session = request.getSession(true);
 
-			session.setAttribute("user", administrator);
+			session.setAttribute("administrator", administrator);
+	        session.setMaxInactiveInterval(300); // 5 minuti
 			
 			request.getRequestDispatcher("/AdminLogged.jsp").forward(request, response);
 
