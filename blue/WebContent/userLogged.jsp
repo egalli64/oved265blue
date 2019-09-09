@@ -20,7 +20,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
 
 <body>
 <!-- Navigation Bar -->
-<div class="w3-bar w3-white w3-large">
+<div class="w3-bar w3-black w3-large">
   <a href="/blue/index.html" class="w3-bar-item w3-button w3-blue w3-mobile"><i class="fa fa-car w3-margin-right"></i>eCar Blue</a>  
   <a href="/blue/cars.html" class="w3-bar-item w3-button w3-grey w3-mobile">Cars</a>
   <a href="/blue/admin.html" class="w3-bar-item w3-button w3-grey w3-mobile">Administration</a>
@@ -37,6 +37,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
 
 <div>
 <h1>Welcome ${user.username}</h1>
+<img class="w3-image" src="./pic/Immagine1.jpg" alt="eCar">		
+
+
 </div>
 <!-- <div>
  <form action="/blue/Logout" method="get">

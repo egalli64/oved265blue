@@ -30,6 +30,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
   
 </div>
 <div><h1>Registration is gone fine! Welcome to eCar ${user.username}</h1>
+<img class="w3-image" src="./pic/Immagine1.jpg" alt="eCar">		
+
 </div>
 <div class="w3-display-left w3-padding w3-col l6 m8">
     <div class="w3-container w3-blue">
@@ -46,10 +48,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
             <label><i class="fa fa-unlock"></i>Password</label>
             <input class="w3-input w3-border" type="password" placeholder="Password" name="password" required>
           </div>
+                	
         </div>
         
         <button class="w3-button w3-dark-grey" type="submit"><i class="fa fa-key w3-margin-right"></i> Log In</button>
-            <!--     <button class="w3-button w3-blue" type="submit"><i class="fa fa-key w3-margin-right"></i> Sign Up</button>--> 
+            <!--     <button class="w3-button w3-blue" type="submit"><i class="fa fa-key w3-margin-right"></i> Sign Up</button>-->
+ 	
+             
 
       </form>
     </div>

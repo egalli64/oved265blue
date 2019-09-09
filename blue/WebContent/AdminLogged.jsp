@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
 </style>
@@ -20,22 +21,27 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
 
 <body>
 <!-- Navigation Bar -->
-<div class="w3-bar w3-white w3-large">
+<div class="w3-bar w3-black w3-large">
+
    <a href="/blue/index.html" class="w3-bar-item w3-button w3-blue w3-mobile"><i class="fa fa-car w3-margin-right"></i>eCar Blue</a>  
   <a href="/blue/cars.html" class="w3-bar-item w3-button w3-grey w3-mobile">Cars</a>
   <a href="/blue/admin.html" class="w3-bar-item w3-button w3-grey w3-mobile">Administration</a>
   <a href="/blue/Places.html" class="w3-bar-item w3-button w3-grey w3-mobile">Places</a>
   <a href="/blue/Howitworks.html" class="w3-bar-item w3-button w3-grey w3-mobile">How it works</a>
+
   <!-- <a href="#contact" class="w3-bar-item w3-button w3-mobile">Contact</a> -->
    <div class="w3-bar-item w3-button w3-right w3-blue w3-mobile">
    <form action="/blue/Logout"  method="get">
    <input type="submit"  value= "Logout">
+   
    </form>
    </div>
 </div>
 
 <div>
-<h1>Hi ${user.username}, you are Admin of this site!</h1>
+<h1 style="color:black;" background-color="black" >Hi ${user.username}, you are Admin of this site!</h1>
+<img class="w3-image" src="./pic/Immagine1.jpg" alt="eCar">
+
 </div>
 
 </body>

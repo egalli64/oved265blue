@@ -30,6 +30,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
   
 </div>
 <div><h1>User not registered correctly</h1>
+<img class="w3-image" src="./pic/Immagine1.jpg" alt="eCar">		
+
 </div>
 
 </body>
