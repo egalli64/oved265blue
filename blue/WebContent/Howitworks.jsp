@@ -19,7 +19,7 @@ margin-left:10px;}
 <body>
 
 <!-- Navigation Bar -->
-<div class="w3-bar w3-black w3-large">
+<div class="w3-bar w3-white w3-large">
   <a href="/blue/index.jsp" class="w3-bar-item w3-button w3-blue w3-mobile"><i class="fa fa-car w3-margin-right"></i>eCar Blue</a>  
   <a href="/blue/cars.jsp" class="w3-bar-item w3-button w3-grey w3-mobile">Cars</a>
   <a href="/blue/admin.jsp" class="w3-bar-item w3-button w3-grey w3-mobile">Administration</a>
