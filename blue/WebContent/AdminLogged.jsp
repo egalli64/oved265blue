@@ -23,6 +23,7 @@ text-align: center;
 color: white;
 background-color: black; 
 margin: 0px;
+opacity: 0.5;
 
 }
 img{
