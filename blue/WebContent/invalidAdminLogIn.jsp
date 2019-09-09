@@ -30,6 +30,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
   <a href="/blue/signUp.html" class="w3-bar-item w3-button w3-right w3-blue w3-mobile" method="post">Sign Up</a>
 </div>
 	<div><h1>Sorry, you are not Admin of this site!</h1></div>
+	<img class="w3-image" src="./pic/Immagine1.jpg" alt="eCar">
 </body>
 
 </html>
