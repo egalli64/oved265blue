@@ -37,7 +37,7 @@ img{
   </c:if>
      
   <c:if test="${administrator!=null}">
-      <a href="/blue/Logout" class="w3-bar-item w3-button w3-right w3-blue w3-mobile" >Logout ${user.username}</a>
+      <a href="/blue/Logout" class="w3-bar-item w3-button w3-right w3-blue w3-mobile" >Logout ${administrator.username}</a>
 
   </c:if>  
   </div>

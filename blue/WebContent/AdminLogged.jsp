@@ -45,20 +45,20 @@ background-color: black;
   <a href="/blue/Howitworks.jsp" class="w3-bar-item w3-button w3-grey w3-mobile">How it works</a>
   
   <c:if test="${administrator == null}">
-    <a href="/blue/signUp.jsp" class="w3-bar-item w3-button w3-right w3-cyan w3-mobile" >Sign Up</a>
-        <a href="/blue/index.jsp" class="w3-bar-item w3-button w3-right w3-cyan w3-mobile" method="post">Sign In</a>
+    <a href="/blue/signUp.jsp" class="w3-bar-item w3-button w3-right w3-cyan w3-mobile">Sign Up</a>
+        <a href="/blue/index.jsp" class="w3-bar-item w3-button w3-right w3-cyan w3-mobile">Sign In</a>
     
   
   </c:if>
      
   <c:if test="${administrator!=null}">
-      <a href="/blue/Logout" class="w3-bar-item w3-button w3-right w3-cyan w3-mobile" >Logout ${user.username}</a>
+      <a href="/blue/Logout" class="w3-bar-item w3-button w3-right w3-cyan w3-mobile" >Logout ${administrator.username}</a>
 
   </c:if>  
   </div>
 
 <div>
-<h1 >Hi ${user.username}, you are Admin of this site!</h1>
+<h1 >Hi ${administrator.username}, you are Admin of this site!</h1>
 <header class="w3-display-container w3-content" style="max-width:2000px;">
 <img class="w3-image" src="./pic/Immagine1.jpg" alt="eCar" >
   <div class="w3-display-left w3-padding w3-col l6 m8">

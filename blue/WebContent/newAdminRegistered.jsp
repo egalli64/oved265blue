@@ -41,17 +41,17 @@ background-color: black;
   
   <c:if test="${administrator == null}">
     <a href="/blue/signUp.jsp" class="w3-bar-item w3-button w3-right w3-blue w3-mobile" >Sign Up</a>
-        <a href="/blue/index.jsp" class="w3-bar-item w3-button w3-right w3-blue w3-mobile" method="post">Sign In</a>
+        <a href="/blue/index.jsp" class="w3-bar-item w3-button w3-right w3-blue w3-mobile">Sign In</a>
     
   
   </c:if>
      
   <c:if test="${administrator!=null}">
-      <a href="/blue/Logout" class="w3-bar-item w3-button w3-right w3-blue w3-mobile" >Logout ${user.username}</a>
+      <a href="/blue/Logout" class="w3-bar-item w3-button w3-right w3-blue w3-mobile" >Logout ${administrator.username}</a>
 
   </c:if>  
   </div>
-<div><h1>Registration of the new Admin is gone fine! Welcome to eCar ${user.username}</h1>
+<div><h1>Registration of the new Admin is gone fine! Welcome to eCar ${administrator.username}</h1>
 <img class="w3-image" src="./pic/Immagine1.jpg" alt="eCar">		
 
 </div>

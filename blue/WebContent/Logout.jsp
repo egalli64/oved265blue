@@ -42,7 +42,7 @@ background-color: black;
   
   <c:if test="${user == null}">
     <a href="/blue/signUp.jsp" class="w3-bar-item w3-button w3-right w3-blue w3-mobile" >Sign Up</a>
-        <a href="/blue/index.jsp" class="w3-bar-item w3-button w3-right w3-blue w3-mobile" method="post">Sign In</a>
+        <a href="/blue/index.jsp" class="w3-bar-item w3-button w3-right w3-blue w3-mobile">Sign In</a>
     
   
   </c:if>
