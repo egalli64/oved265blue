@@ -49,7 +49,7 @@ background-color: black;
 </div>
 
 <div>
-<h1 style="color:black;" background-color="black" >Hi ${user.username}, you are Admin of this site!</h1>
+<h1 >Hi ${user.username}, you are Admin of this site!</h1>
 <img class="w3-image" src="./pic/Immagine1.jpg" alt="eCar">
 
 </div>
