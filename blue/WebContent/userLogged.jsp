@@ -50,15 +50,20 @@ background-color: black;
     <c:if test="${administrator != null}">
       <a href="/blue/LogoutAdmin" class="w3-bar-item w3-button w3-right w3-blue w3-mobile" >Logout ${user.username}</a>
   </c:if>  
+  
  
 </div>
 
 <div>
-<h1>Welcome ${user.username}</h1>
-<img class="w3-image" src="./pic/Immagine1.jpg" alt="eCar">		
+<h1>Welcome ${logged.username}</h1>	
+<h2>My Profile</h2>
+<h2> Your Username: ${user.username}</h2>
+<h2> Your Password: ${user.password}</h2>
 
 
+<img class="w3-image" src="./pic/Immagine1.jpg" alt="eCar">	
 </div>
+
 <!-- <div>
  <form action="/blue/Logout" method="get">
       <input type="submit" value="Logout">
