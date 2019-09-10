@@ -26,14 +26,17 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif; te
   <a href="/blue/Places.jsp" class="w3-bar-item w3-button w3-grey w3-mobile">Places</a>
   <a href="/blue/Howitworks.jsp" class="w3-bar-item w3-button w3-grey w3-mobile">How it works</a>
   
-  <c:if test="${user == null}">
+  <c:if test="${user == null && administrator == null}">
     <a href="/blue/signUp.jsp" class="w3-bar-item w3-button w3-right w3-blue w3-mobile" >Sign Up</a>
   
   </c:if>
      
-  <c:if test="${user!=null}">
+  <c:if test="${user != null}">
       <a href="/blue/Logout" class="w3-bar-item w3-button w3-right w3-blue w3-mobile" >Logout ${user.username}</a>
-
+  </c:if>  
+  
+    <c:if test="${administrator != null}">
+      <a href="/blue/LogoutAdmin" class="w3-bar-item w3-button w3-right w3-blue w3-mobile" >Logout admin ${user.username}</a>
   </c:if>  
  
 </div>

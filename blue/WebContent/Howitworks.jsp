@@ -19,25 +19,27 @@ margin-left:10px;}
 <body>
 
 <!-- Navigation Bar -->
-<div class="w3-bar w3-white w3-large">
+<div class="w3-bar w3-black w3-large">
   <a href="/blue/index.jsp" class="w3-bar-item w3-button w3-blue w3-mobile"><i class="fa fa-car w3-margin-right"></i>eCar Blue</a>  
   <a href="/blue/cars.jsp" class="w3-bar-item w3-button w3-grey w3-mobile">Cars</a>
   <a href="/blue/admin.jsp" class="w3-bar-item w3-button w3-grey w3-mobile">Administration</a>
   <a href="/blue/Places.jsp" class="w3-bar-item w3-button w3-grey w3-mobile">Places</a>
   <a href="/blue/Howitworks.jsp" class="w3-bar-item w3-button w3-grey w3-mobile">How it works</a>
   
-  <c:if test="${user == null}">
+  <c:if test="${user == null && administrator == null}">
     <a href="/blue/signUp.jsp" class="w3-bar-item w3-button w3-right w3-blue w3-mobile" >Sign Up</a>
-        <a href="/blue/index.jsp" class="w3-bar-item w3-button w3-right w3-blue w3-mobile" method="post">Sign In</a>
-    
   
   </c:if>
      
-  <c:if test="${user!=null}">
+  <c:if test="${user != null}">
       <a href="/blue/Logout" class="w3-bar-item w3-button w3-right w3-blue w3-mobile" >Logout ${user.username}</a>
-
   </c:if>  
-  </div>
+  
+    <c:if test="${administrator != null}">
+      <a href="/blue/LogoutAdmin" class="w3-bar-item w3-button w3-right w3-blue w3-mobile" >Logout admin ${user.username}</a>
+  </c:if>  
+ 
+</div>
 <div>
      <h2>How it works</h2>
      <h5>instructions</h5>

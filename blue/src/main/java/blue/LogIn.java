@@ -27,18 +27,19 @@ public class LogIn extends HttpServlet {
 
 		String username = request.getParameter("user");
 		String password = request.getParameter("password");
+		
 		if (dao.checkUserbyUsernameAndPassword(username, password)) {
 			User user = new User();
 
 			user.setUsername(username);
 			user.setPassword(password);
 
+
 			HttpSession session = request.getSession(true);
 			session.setAttribute("user", user);
 	        session.setMaxInactiveInterval(300); // 5 minuti
 
 			request.getRequestDispatcher("/userLogged.jsp").forward(request, response);
-
 		} else {
 			request.getRequestDispatcher("/invalidLogin.jsp").forward(request, response);
 		}
