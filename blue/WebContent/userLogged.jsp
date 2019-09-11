@@ -16,15 +16,13 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
-h1, h2{
+body{ background-image: url("./pic/Immagine1.jpg");    /* Center the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+h1, h2, h3{
 text-align: center;
 color: white;
-background-color: black; 
 margin: 0px;
-
-}
-img{
-background-color: black; 
 }
 </style>
 </head>
@@ -57,11 +55,18 @@ background-color: black;
 <div>
 <h1>Welcome ${user.username}</h1>	
 <h2>My Profile</h2>
-<h2> Your Username: ${user.username}</h2>
-<h2> Your Password: ${user.password}</h2>
+<h3>  Username: ${user.username}</h3>
+<h3>  Password: ${user.password}</h3>
+<h3>  User_Id: ${user.user_id}</h3>
+<h3>  Name: ${user.name}</h3>
+<h3>  Last Name: ${user.last_name}</h3>
+<h3>  Email: ${user.email}</h3>
+<h3>  Credit Card number: ${user.card_number}</h3>
+<h3>  Credit Card Expiration Date: ${user.card_date}</h3>
+<h3>  Credit Card CVV: ${user.card_cvv}</h3>
+<h3>  Licence: ${user.licence}</h3>
 
 
-<img class="w3-image" src="./pic/Immagine1.jpg" alt="eCar">	
 </div>
 
 <!-- <div>

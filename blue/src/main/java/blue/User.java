@@ -2,7 +2,7 @@ package blue;
 
 // JAVABEAN
 public class User {
-	private String user_id;
+	private int user_id;
 	private String name;
 	private String last_name;
 	private String username;
@@ -13,11 +13,11 @@ public class User {
 	private String card_cvv;
 	private String licence;
 
-	public String getUser_id() {
+	public int getUser_id() {
 		return user_id;
 	}
 
-	public void setUser_id(String user_id) {
+	public void setUser_id(int user_id) {
 		this.user_id = user_id;
 	}
 
