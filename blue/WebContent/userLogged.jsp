@@ -55,7 +55,7 @@ background-color: black;
 </div>
 
 <div>
-<h1>Welcome ${logged.username}</h1>	
+<h1>Welcome ${user.username}</h1>	
 <h2>My Profile</h2>
 <h2> Your Username: ${user.username}</h2>
 <h2> Your Password: ${user.password}</h2>
