@@ -19,9 +19,14 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
 body{ background-image: url("./pic/Immagine1.jpg");    /* Center the image */
   background-size: cover; /* Resize the background image to cover the entire container */
 }
-h1, h2, h3{
+h1, h2{
 text-align: center;
-color: white;
+margin: 0px;
+text-shadow: 6px 4px white;
+}
+h3{
+text-align: center;
+color: cyan;
 margin: 0px;
 }
 </style>
@@ -55,16 +60,16 @@ margin: 0px;
 <div>
 <h1>Welcome ${user.username}</h1>	
 <h2>My Profile</h2>
-<h3>  Username: ${user.username}</h3>
-<h3>  Password: ${user.password}</h3>
+<h3>  <i class="fa fa-user"></i>Username: ${user.username}</h3>
+<h3>  <i class="fa fa-unlock"></i>Password: ${user.password}</h3>
 <h3>  User_Id: ${user.user_id}</h3>
-<h3>  Name: ${user.name}</h3>
-<h3>  Last Name: ${user.last_name}</h3>
-<h3>  Email: ${user.email}</h3>
-<h3>  Credit Card number: ${user.card_number}</h3>
-<h3>  Credit Card Expiration Date: ${user.card_date}</h3>
+<h3>  <i class="fa fa-user"></i>Name: ${user.name} </h3>
+<h3>  <i class="fa fa-user"></i>Last Name: ${user.last_name}</h3>
+<h3>  <i class="fa fa-envelope" aria-hidden="true"></i>Email: ${user.email}</h3>
+<h3>  <i class="fa fa-credit-card" aria-hidden="true"></i>Credit Card number: ${user.card_number}</h3>
+<h3>  <i class="fa fa-calendar-o" aria-hidden="true"></i>Credit Card Expiration Date: ${user.card_date}</h3>
 <h3>  Credit Card CVV: ${user.card_cvv}</h3>
-<h3>  Licence: ${user.licence}</h3>
+<h3>  <i class="fa fa-envelope" aria-hidden="true"></i>Licence: ${user.licence}</h3>
 
 
 </div>

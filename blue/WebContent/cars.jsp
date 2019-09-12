@@ -101,7 +101,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
   <div class="w3-row-padding">
     <div class="w3-half w3-margin-bottom">
       <ul class="w3-ul w3-light-grey w3-center">
-        <li class="w3-dark-grey w3-xlarge w3-padding-32">Model</li>
+        <li class="w3-cyan w3-xlarge w3-padding-32">Model</li>
         <li class="w3-padding-16">Tesla</li>
         <li class="w3-padding-16">BMW</li>
         <li class="w3-padding-16">Toyota</li>
